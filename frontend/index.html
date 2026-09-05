@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VANADHIKAR AI | FRA Monitoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./assistant.css?v=1">
+  <link rel="stylesheet" href="./portal.css?v=1">
+  <link rel="stylesheet" href="./forest.css?v=1">
+  <link rel="stylesheet" href="./govt-theme.css?v=1">
+  <link rel="stylesheet" href="./priority.css?v=1">
+  <link rel="stylesheet" href="./government-redesign.css?v=1">
+  <link rel="stylesheet" href="./subtle-forest.css?v=1">
+  <link rel="stylesheet" href="./final-refinement.css?v=1">
+  <link rel="stylesheet" href="./government-identity.css?v=1">
+  <link rel="stylesheet" href="./utility-controls.css?v=1">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div><strong>VANADHIKAR</strong><span>AI MONITORING</span></div>
+      </div>
+      <div class="side-label">WORKSPACE</div>
+      <button class="nav-item active"><span>◈</span> Overview</button>
+      <button class="nav-item" onclick="document.querySelector('#anomaly-section').scrollIntoView({behavior:'smooth'})"><span>⌁</span> Anomaly review <b id="side-anomalies">0</b></button>
+      <button class="nav-item" onclick="document.querySelector('#state-section').scrollIntoView({behavior:'smooth'})"><span>▤</span> State progress</button>
+      <div class="sidebar-note"><span class="pulse"></span><div><strong>Decision support mode</strong><small>Signals require administrative verification. No automated determinations.</small></div></div>
+      <div class="side-footer">FRA MONITORING<br><span>PROTOTYPE · DEMO DATASET</span></div>
+    </aside>
+    <main class="main-content" id="main-content" tabindex="-1">
+      <section class="portal-hero">
+        <div class="portal-utility"><span class="gov-identity"><span class="indian-flag" aria-label="Indian flag" role="img"><i></i><b>●</b></span><img class="national-emblem" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="State Emblem of India"><strong>Government of India</strong><span class="identity-divider">|</span><strong>Ministry of Tribal Affairs</strong></span><span class="utility-actions"><button onclick="skipToContent()">Skip to content</button><span aria-hidden="true">|</span><button onclick="showLanguageNotice()">हिन्दी</button><span aria-hidden="true">|</span><button onclick="showAccessibilityNotice()">Accessibility</button></span></div>
+        <nav class="portal-nav"><div class="portal-brand"><span class="emblem">✦</span><span><strong>VANADHIKAR AI</strong><small>Forest Rights Act Monitoring</small></span></div><div class="portal-links"><button onclick="document.querySelector('#state-section').scrollIntoView({behavior:'smooth'})">Progress</button><button onclick="document.querySelector('#anomaly-section').scrollIntoView({behavior:'smooth'})">Review signals</button><button onclick="document.querySelector('#map').scrollIntoView({behavior:'smooth'})">District map</button></div><button class="portal-menu" aria-label="Open menu">☰</button></nav>
+        <div class="hero-content"><p class="hero-kicker">NATIONAL DECISION SUPPORT PORTAL</p><h2>Forest Rights Act<br><span>monitoring, made clear.</span></h2><p>One trusted view for claims, progress and administrative signals across districts.</p><div class="portal-search"><input id="portal-query" placeholder="Search claim ID, district, state or ask VANADHIKAR AI" onkeydown="if(event.key==='Enter') usePortalSearch()"><button onclick="usePortalSearch()" aria-label="Search">⌕</button></div><div class="hero-links"><span>Popular:</span><button onclick="setPortalQuestion('Which districts need attention first?')">Districts needing attention</button><button onclick="setPortalQuestion('Which state has the most pending claims?')">Pending claims by state</button><button onclick="setPortalQuestion('Which claims should I review first?')">High-priority claims</button></div></div>
+        <div class="hero-watermark">FRA<br><small>2026</small></div>
+        <div class="hero-assistant"><div class="assistant-top"><span class="assistant-orb">✦</span><div><strong>Ask VANADHIKAR AI</strong><small>Here to help you understand the register</small></div><span class="online-dot"></span></div><p>Ask about claims, districts, anomalies, or anything else.</p><button onclick="document.querySelector('#query').focus();document.querySelector('#state-section').scrollIntoView({behavior:'smooth'})">Start a conversation <b>→</b></button></div>
+      </section>
+      <header class="topbar"><div><p class="eyebrow">NATIONAL IMPLEMENTATION DASHBOARD</p><h1>Forest Rights Act Monitoring</h1><p class="subtitle">Monitoring and Decision Support for Administrative Review.</p></div><div class="top-actions"><span class="live-dot">LIVE DATA</span><button class="icon-button" title="Refresh data" onclick="loadDashboard()">↻</button></div></header>
+      <section class="metrics" id="metrics"></section>
+      <section class="grid-primary">
+        <article class="panel map-panel"><div class="panel-heading"><div><p class="eyebrow">GEOGRAPHIC SIGNALS</p><h2>District activity map</h2></div><div class="map-legend"><span><i class="dot high"></i>High attention</span><span><i class="dot med"></i>Review</span><span><i class="dot low"></i>Routine</span></div></div><div id="map"></div></article>
+        <article class="panel priority-panel"><div class="panel-heading"><div><p class="eyebrow">PRIORITIZATION</p><h2>Districts requiring attention</h2></div><span class="count-chip" id="district-count">0 districts</span></div><div id="priority-list" class="priority-list"></div></article>
+      </section>
+      <section class="priority-engine panel" id="priority-engine"><div class="panel-heading"><div><p class="eyebrow">FRA PRIORITY ENGINE</p><h2>Top cases requiring attention</h2><p class="muted">Transparent ranking to help an officer decide where to start.</p></div><span class="count-chip">Evidence-based</span></div><div id="priority-cases" class="priority-cases"><div class="empty-state">Loading priority cases...</div></div></section>
+      <section class="grid-secondary" id="state-section">
+        <article class="panel state-panel"><div class="panel-heading"><div><p class="eyebrow">PROGRESS BY STATE</p><h2>Implementation pulse</h2></div><select id="state-sort" onchange="renderStates()"><option value="flagged_claims">Flagged signals</option><option value="pending_claims">Pending claims</option><option value="total_claims">Total claims</option></select></div><div class="state-table-wrap"><table><thead><tr><th>State</th><th>Claims</th><th>Approved</th><th>Pending</th><th>Signals</th><th>Progress</th></tr></thead><tbody id="state-table"></tbody></table></div></article>
+        <article class="panel question-panel"><p class="eyebrow">DECISION SUPPORT ASSISTANT</p><h2>Ask VANADHIKAR AI</h2><p class="muted">Evidence-grounded answers for FRA monitoring and general questions.</p><div id="chat-history" class="chat-history"><div class="empty-state">Start a conversation about the live monitoring register.</div></div><div class="search-box"><input id="query" placeholder="Which districts need attention first?" onkeydown="if(event.key==='Enter') askAssistant()"><button onclick="askAssistant()">Ask AI</button></div><div class="assistant-prompts"><button onclick="setQuestion('Which districts need attention first?')">Attention first</button><button onclick="setQuestion('Which state has the most pending claims?')">Most pending state</button></div><div id="search-results" class="search-results"></div></article>
+      </section>
+      <section class="panel anomaly-panel" id="anomaly-section"><div class="panel-heading"><div><p class="eyebrow">REVIEW QUEUE</p><h2>Potential anomalies</h2><p class="muted">Signals surfaced by transparent rules for administrative review.</p></div><div class="filter-group"><button class="filter active" data-severity="ALL">All</button><button class="filter" data-severity="HIGH">High</button><button class="filter" data-severity="MEDIUM">Medium</button><button class="filter" data-severity="LOW">Low</button></div></div><div id="anomaly-list" class="anomaly-list"></div></section>
+      <footer>VANADHIKAR AI · Prototype / Demonstration System <span>Data shown is synthetic and intended for demonstration purposes.</span></footer>
+    </main>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="./app.js?v=3"></script>
+</body>
+</html>

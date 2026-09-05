@@ -1,0 +1,495 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Bastar",
+        "state_name": "Chhattisgarh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.738973,
+          19.051004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Dantewada",
+        "state_name": "Chhattisgarh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.990573,
+          20.892179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Kanker",
+        "state_name": "Chhattisgarh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.100442,
+          24.056582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Korba",
+        "state_name": "Chhattisgarh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.910516,
+          23.52772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Surguja",
+        "state_name": "Chhattisgarh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.627284,
+          19.627125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Bharuch",
+        "state_name": "Gujarat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.521953,
+          18.588135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Dangs",
+        "state_name": "Gujarat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.256705,
+          19.947609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Narmada",
+        "state_name": "Gujarat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.8008,
+          23.115646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Tapi",
+        "state_name": "Gujarat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.607321,
+          18.365121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Valsad",
+        "state_name": "Gujarat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.837261,
+          22.982589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Gumla",
+        "state_name": "Jharkhand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.259571,
+          19.714589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Latehar",
+        "state_name": "Jharkhand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.107571,
+          21.692612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Ranchi",
+        "state_name": "Jharkhand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.280536,
+          23.552553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Simdega",
+        "state_name": "Jharkhand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.439621,
+          19.871007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "West Singhbhum",
+        "state_name": "Jharkhand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.887414,
+          19.041522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Balaghat",
+        "state_name": "Madhya Pradesh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.202646,
+          23.676682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Betul",
+        "state_name": "Madhya Pradesh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.61735,
+          19.095288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Chhindwara",
+        "state_name": "Madhya Pradesh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.798635,
+          22.822588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Dindori",
+        "state_name": "Madhya Pradesh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.57293,
+          22.824215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Mandla",
+        "state_name": "Madhya Pradesh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.849511,
+          17.979649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Amravati",
+        "state_name": "Maharashtra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.878835,
+          23.344376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Gadchiroli",
+        "state_name": "Maharashtra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.077247,
+          22.074188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Nandurbar",
+        "state_name": "Maharashtra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.365821,
+          19.043084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Nashik",
+        "state_name": "Maharashtra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.987404,
+          22.490643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Yavatmal",
+        "state_name": "Maharashtra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.082844,
+          19.354161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Kandhamal",
+        "state_name": "Odisha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.546575,
+          23.432461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Keonjhar",
+        "state_name": "Odisha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.731041,
+          19.023906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Koraput",
+        "state_name": "Odisha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.645972,
+          22.424779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Mayurbhanj",
+        "state_name": "Odisha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.524527,
+          24.303217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Sundargarh",
+        "state_name": "Odisha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.884377,
+          22.46848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Banswara",
+        "state_name": "Rajasthan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.169457,
+          17.808607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Dungarpur",
+        "state_name": "Rajasthan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.401253,
+          19.103337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Pratapgarh",
+        "state_name": "Rajasthan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.432438,
+          21.319132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Sirohi",
+        "state_name": "Rajasthan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.489274,
+          19.852907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_name": "Udaipur",
+        "state_name": "Rajasthan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.086735,
+          23.745257
+        ]
+      }
+    }
+  ]
+}
