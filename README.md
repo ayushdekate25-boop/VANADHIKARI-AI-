@@ -1,6 +1,7 @@
 # VANADHIKAR AI
 
 AI-Powered Forest Rights Act Monitoring & Decision Support System.
+https://vanadhikar-gov.onrender.com/
 
 VANADHIKAR AI is a demo-ready decision-support platform for reviewing synthetic FRA monitoring data. It surfaces potential anomalies and unusual patterns for human administrative verification. It does not determine fraud, corruption, illegality, or guilt.
 
